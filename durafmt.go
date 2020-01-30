@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	units      = []string{"years", "weeks", "days", "hours", "minutes", "seconds", "milliseconds", "microseconds"}
+	units      = []string{"years", "weeks", "days", "h", "minutes", "seconds", "milliseconds", "microseconds"}
 	unitsShort = []string{"y", "w", "d", "h", "m", "s", "ms", "µs"}
 )
 
@@ -107,7 +107,7 @@ func (d *Durafmt) String() string {
 		"milliseconds": milliseconds,
 		"seconds":      seconds,
 		"minutes":      minutes,
-		"hours":        hours,
+		"h":            hours,
 		"days":         days,
 		"weeks":        weeks,
 		"years":        years,
